@@ -5,7 +5,27 @@ $(function() {
 		margin: 0,
 		nav:true,
 		navText:false,
-		navSpeed:1000
+		navSpeed:1000,
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1,
+				nav:true
+			},
+			400:{
+				items:1,
+				nav:true
+			},
+			600:{
+				items:2,
+				nav:false
+			},
+			1000:{
+				items:3,
+				nav:true,
+				loop:false
+			}
+    	}
 	})
 
 
