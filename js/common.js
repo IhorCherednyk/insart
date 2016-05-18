@@ -1,5 +1,34 @@
 $(function() {
 
+	// //animation
+	$(".how-ittem span").animated("flip");
+	$(".btn").animated("zoomIn");
+	$(".social h2").animated("bounceIn");
+	$(".manager-wrap").animated("fadeInLeft");
+	$(".contacts-wrap").animated("fadeInRight");
+	$(".lamp").animated("zoomIn");
+	
+
+	$(".events").waypoint(function() {
+		$(".teach-wrap-left").each(function(index) {
+			var ths = $(this);
+			ths.addClass("fadeInLeftBig animated");
+			ths.css("opacity", "1")
+		});
+		$(".teach-wrap-right").each(function(index) {
+			var ths = $(this);
+			ths.addClass("fadeInRightBig animated");
+			ths.css("opacity", "1")
+		});
+	}, {
+		offset : "60%"
+	});
+
+
+
+
+
+
 	$('.slider').owlCarousel({
 		loop:true,
 		margin: 0,
